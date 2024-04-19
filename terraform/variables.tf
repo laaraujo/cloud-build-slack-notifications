@@ -35,6 +35,7 @@ variable "activate_apis" {
     "run.googleapis.com",
     "storage.googleapis.com",
     "secretmanager.googleapis.com",
+    "cloudbuild.googleapis.com",
   ]
 }
 
