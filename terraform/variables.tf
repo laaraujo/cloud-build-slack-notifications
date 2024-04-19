@@ -28,17 +28,6 @@ variable "slack_app_webhook_url" {
     description = "Slack App's secret webhook URL"
 }
 
-variable "activate_apis" {
-  type        = list(string)
-  description = "The list of APIs & services to activate within the project."
-  default = [
-    "run.googleapis.com",
-    "storage.googleapis.com",
-    "secretmanager.googleapis.com",
-    "cloudbuild.googleapis.com",
-  ]
-}
-
 variable "slack_notifier_img" {
     type = string
     description = "Image URL of GCP's Cloud Build Notifier (SLACK)"
