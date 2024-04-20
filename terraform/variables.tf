@@ -20,6 +20,7 @@ variable "zone" {
 variable "slack_app_webhook_url" {
   type        = string
   description = "Slack App's secret webhook URL"
+  sensitive   = true
 }
 
 variable "slack_notifier_img" {
