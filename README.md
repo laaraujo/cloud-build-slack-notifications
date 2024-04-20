@@ -2,7 +2,7 @@
 
 Get slack notifications whenever there's a Cloud Build update.
 
-![resulting notifications](image.png)
+![resulting notifications](./docs/slack_notifications.png)
 
 
 ## Table of contents
