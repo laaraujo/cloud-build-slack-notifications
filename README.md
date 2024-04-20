@@ -1,3 +1,5 @@
+[![tfsec](https://github.com/laaraujo/cloud-build-slack-notifications/actions/workflows/tfsec.yml/badge.svg?branch=main)](https://github.com/laaraujo/cloud-build-slack-notifications/actions/workflows/tfsec.yml)
+
 # Cloud Build Slack notifications
 
 Get slack notifications whenever there's a Cloud Build update.

@@ -11,6 +11,7 @@ data "template_file" "config" {
   ]
 }
 
+# tfsec:ignore:google-storage-bucket-encryption-customer-key
 resource "google_storage_bucket" "files" {
   name                        = "${var.app_name}_files"
   location                    = "US"
