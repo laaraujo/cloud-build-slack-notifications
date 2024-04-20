@@ -4,12 +4,6 @@ variable "app_name" {
   default     = "cloud_build_slack_notifications"
 }
 
-variable "sa_name" {
-  type        = string
-  description = "Service Account name (for the service account 28 char limit and regex)"
-  default     = "cloud-build-slack-notif"
-}
-
 variable "project_id" {
   type        = string
   description = "GCP Project ID"
