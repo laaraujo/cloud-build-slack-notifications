@@ -1,7 +1,7 @@
 resource "google_pubsub_topic" "topic" {
   # "cloud-builds" isthe topic where all Cloud Build update messages are published to
   # https://cloud.google.com/build/docs/subscribe-build-notifications 
-  name = "cloud-builds"
+  name                       = "cloud-builds"
   message_retention_duration = "86400s" # 1 day
 }
 
@@ -12,11 +12,11 @@ resource "google_pubsub_subscription" "subscription" {
   push_config {
     push_endpoint = data.google_cloud_run_v2_service.instance.uri
     oidc_token {
-        service_account_email = module.cloud_build_slack_notifications_service_account.email
+      service_account_email = module.cloud_build_slack_notifications_service_account.email
     }
   }
 
-  depends_on = [ google_pubsub_topic.topic ]
+  depends_on = [google_pubsub_topic.topic]
 }
 
 
