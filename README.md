@@ -2,8 +2,6 @@
 
 Get slack notifications whenever there's a Cloud Build update.
 
-![resulting notifications](./docs/slack_notifications.png)
-
 
 ## Table of contents
 
@@ -40,6 +38,7 @@ terraform init
 ## Configuration
 
 ### [For manual deployment](#manual-deployment)
+
 Sample `terraform.tfvars`:
 ```sh
 project_id = "<gcp_project_id>"
@@ -47,6 +46,21 @@ region = "<gcp_region>"
 zone = "<gcp_zone>"
 slack_app_webhook_url = "<slack_app_webhook_url>"
 ```
+
+
+### [config.yml](./files/config.yml)
+Config file for the slack notifier image. Let's the actual service know where to look for the template and what kind of notifications to send
+
+* Reference: [GCP Cloud Build API](https://cloud.google.com/build/docs/api/reference/rest/v1/projects.builds)
+
+
+### [template.json](./files/template.json)
+Template for the message received in Slack.
+This repository includes the default one but it can be customized.
+
+![resulting notifications](./docs/slack_notifications.png)
+
+* Reference: [Slack API Block Kit](https://api.slack.com/block-kit)
 
 
 ## Manual deployment
