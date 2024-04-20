@@ -60,7 +60,7 @@ These instructions assume you already have:
 terraform plan
 ```
 
-2. If the output above looks good, go ahead and apply those changes (you will be prompted to confirm with `"yes"`):
+2. If the output above looks good, go ahead and apply those changes (you will be prompted to confirm with **"yes"**):
 ```sh
 terraform apply
 ```
