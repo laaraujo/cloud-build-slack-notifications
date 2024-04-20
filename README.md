@@ -58,7 +58,8 @@ Config file for the slack notifier image. Let's the actual service know where to
 Template for the message received in Slack.
 This repository includes the default one but it can be customized.
 
-![resulting notifications](./docs/slack_notifications.png)
+> ![resulting notifications](./docs/slack_notifications.png)
+> Result notification from Cloud Build `Run Sample Build` option
 
 * Reference: [Slack API Block Kit](https://api.slack.com/block-kit)
 
