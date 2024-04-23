@@ -18,10 +18,3 @@ resource "google_pubsub_subscription" "subscription" {
 
   depends_on = [google_pubsub_topic.topic]
 }
-
-
-
-# gcloud pubsub subscriptions create {SUBSCRIPTION_NAME} \
-#    --topic=cloud-builds \
-#    --push-endpoint={CLOUD_BUILD_SERVICE_URL} \
-#    --push-auth-service-account={INVOKER_SERVICE_ACCOUNT}@{PROJECT_ID}.iam.gserviceaccount.com
