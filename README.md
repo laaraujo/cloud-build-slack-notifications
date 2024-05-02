@@ -2,7 +2,7 @@
 
 # Cloud Build Slack notifications
 
-Get slack notifications whenever there's a Cloud Build update.
+Get slack notifications whenever there's a Cloud Build status update.
 
 
 ## Table of contents
@@ -12,6 +12,7 @@ Get slack notifications whenever there's a Cloud Build update.
 * [Configuration](#configuration)
 * [Manual Deployment](#manual-deployment)
 * [Sources](#sources)
+
 
 ## Pre-requisites
 
