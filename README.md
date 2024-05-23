@@ -70,7 +70,7 @@ This repository includes the default one but it can be customized.
 ## Manual deployment
 
 These instructions assume you already have:
-* [Terraform]() installed
+* [Terraform](https://www.terraform.io/) installed
 * [GCP Credentials configured locally](https://cloud.google.com/docs/authentication/provide-credentials-adc)
 
 1. Check the what the `terraform plan` looks like:
