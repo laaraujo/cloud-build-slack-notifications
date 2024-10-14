@@ -73,7 +73,7 @@ These instructions assume you already have:
 * [Terraform](https://www.terraform.io/) installed
 * [GCP Credentials configured locally](https://cloud.google.com/docs/authentication/provide-credentials-adc)
 
-1. Check the what the `terraform plan` looks like:
+1. Check what `terraform plan` looks like:
 ```sh
 terraform plan
 ```
